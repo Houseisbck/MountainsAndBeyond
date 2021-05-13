@@ -20,11 +20,12 @@
     font-style: normal;
 }
 
-body {
+.body {
     background-color: rgb(11, 29, 38);
     margin: 0;
     padding: 0;
     border: 0;
+    position: relative;
     outline: 0;
 }
 
@@ -109,7 +110,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 198px;
-    max-width: 1310px;
 }
 
 .header-content__socialLinks {
@@ -200,12 +200,14 @@ body {
 .navigation-content__slider {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
-    right: 145px;
+    position: relative;
+    width: 80px;
 }
 
 .navigation-content__slider-slider {
+    position: fixed;
     height: 186px;
+    margin-right: 32px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -222,6 +224,7 @@ body {
 $inditacorHeight:240px;
 
 .slider-indicator {
+    position: fixed;
     height: $inditacorHeight;
     max-width: 3px;
     display: flex;
@@ -263,21 +266,28 @@ $inditacorHeight:240px;
 }
 
 .content {
-    margin-top: -470px;
+    margin-top: -600px;
 }
 
 .content-main {
+    padding-top: 170px;
     display: flex;
     justify-content: space-between;
-}
-
-.content-main__text-left {
-    justify-content: space-around;
 }
 
 .content-main__text {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.content-main__text-left {
+    width: 100%;
+    align-items: center;
+}
+
+.content-main__text-center {
+    display: flex;
     flex-direction: column;
 }
 
@@ -316,6 +326,8 @@ $inditacorHeight:240px;
     display: flex;
     align-items: center;
     margin-top: 27px;
+    text-decoration: none;
+    cursor: pointer;
 
     div {
         background-image: url(../images/content-arrow.svg);
@@ -324,10 +336,14 @@ $inditacorHeight:240px;
         height: 16px;
         margin-left: 16px;
     }
+
+    &:hover {
+        color: #FBD784;
+    }
 }
 
 .content-second {
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 .footer {
@@ -376,6 +392,7 @@ $inditacorHeight:240px;
     ul {
         list-style: none;
         padding: 0;
+        margin: 0;
 
         div {
             color: #FBD784;
