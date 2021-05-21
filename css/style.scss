@@ -651,6 +651,10 @@ $inditacorHeight:240px;
         margin-top: 5px;
     }
 
+    .footer {
+        margin-bottom: 50px;
+    }
+
     .footer-content__right-links {
         width: 290px;
 
@@ -839,6 +843,17 @@ $inditacorHeight:240px;
 }
 
 @media(max-width:400px) {
+
+    .header-top__hrefs {
+        ul {
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
     .content-main__image {
         width: 137px;
         height: 242px;
@@ -878,6 +893,10 @@ $inditacorHeight:240px;
         font-size: 11px;
         line-height: 12px;
     }
+
+    .footer {
+        margin-top: 120px;
+    }
 }
 
 @media(max-width:350px) {
@@ -899,5 +918,14 @@ $inditacorHeight:240px;
 
     .header-content__socialLinks-text {
         font-size: 12px;
+    }
+}
+
+@media(max-height:500px) {
+    .content {
+        margin-top: -440px;
+    }
+    .content-second {
+        margin-top: 10px;
     }
 }
